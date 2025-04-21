@@ -1,6 +1,8 @@
 const postSchema = require("../validation/postSchema");
 
 const validate = (req, res, next) => {
+  console.log(req.body);
+
   const { error } = postSchema.validate(req.body);
 
   if (error) {

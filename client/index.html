@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Catbook</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="container">
+        <header class="header-section">
+          <h1>Catbook</h1>
+        </header>
+
+        <section>
+          <p class="form-title">Create Post</p>
+
+          <form class="create-post">
+            <input
+              type="text"
+              name="title"
+              id="title"
+              class="post-input"
+              placeholder="Title"
+            />
+
+            <textarea
+              name="body"
+              id="body"
+              class="post-body"
+              placeholder="Add your body here..."
+            ></textarea>
+
+            <div class="btn-panel_container">
+              <button class="btn btn-post">Post</button>
+            </div>
+          </form>
+        </section>
+
+        <section>
+          <ul class="cat-post_list"></ul>
+        </section>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
